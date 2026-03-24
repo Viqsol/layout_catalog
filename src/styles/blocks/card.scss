@@ -26,8 +26,8 @@
   &__title {
     color: $color-main-text;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: $spacing-3;
+    line-height: $spacing-6;
     margin: 0;
     height: 36px;
     width: 166px;
@@ -43,7 +43,7 @@
     align-self: flex-start;
     width: 98px;
     height: 14px;
-    margin: 4px 0 16px 16px;
+    margin: 4px 0 $spacing-4 $spacing-4;
   }
 
   &__code {
@@ -64,7 +64,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 166px;
-    height: 16px;
+    height: $spacing-4;
 
     // align-items: flex-end;
     padding: 0;
@@ -73,7 +73,7 @@
   &__reviews {
     display: flex;
     width: 53px;
-    height: 16px;
+    height: $spacing-4;
 
     &-link {
       text-decoration: none;
@@ -87,7 +87,7 @@
       line-height: 14px;
       margin: 0;
       width: 53px;
-      height: 16px;
+      height: $spacing-4;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -104,14 +104,14 @@
     width: 166px;
     height: 18px;
     padding: 0;
-    margin-top: 24px;
+    margin-top: $spacing-6;
 
     &-name {
       display: flex;
       align-items: flex-end;
       color: $color-secondary-text;
       font-weight: 400;
-      font-size: 12px;
+      font-size: $spacing-3;
       line-height: 18px;
       margin: 0;
       width: 31px;
@@ -124,7 +124,7 @@
       width: 50px;
       height: 18px;
       font-weight: 700;
-      font-size: 16px;
+      font-size: $spacing-4;
       line-height: 18px;
       display: flex;
       align-items: flex-end;
@@ -137,7 +137,7 @@
     width: 166px;
     height: 40px;
     padding: 0;
-    margin: 16px;
+    margin: $spacing-4;
     background-color: $color-button;
     border: 1px solid $color-button;
     border-radius: $radius-border;

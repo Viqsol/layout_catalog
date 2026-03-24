@@ -26,9 +26,9 @@
   --columns: 1;
 
   display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  flex-wrap: wrap;
+  grid-template-columns: repeat(var(--columns), $card-width);
   gap: 46px 48px;
+  justify-content: center;
 
   // max-width: 1200px;
   // padding: 20px;
