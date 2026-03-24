@@ -7,13 +7,16 @@
   background-color: $color-background;
   border: 1px solid $color-border;
   border-radius: $radius-border;
+  transition: transform $duration-hover ease;
 
-  &__image-link {
-    display: block;
-  }
+  // &__image-link {
+
+  //   // display: block;
+  // }
 
   &__image {
     display: block;
+    box-sizing: content-box;
     width: 160px;
     height: 134px;
     padding-top: 32px;
@@ -28,9 +31,11 @@
     margin: 0;
     height: 36px;
     width: 166px;
+    transition: color $duration-hover ease;
 
     &-link {
       text-decoration: none;
+      transition: text-decoration $duration-hover ease;
     }
   }
 
@@ -60,7 +65,8 @@
     justify-content: space-between;
     width: 166px;
     height: 16px;
-    align-items: flex-end;
+
+    // align-items: flex-end;
     padding: 0;
   }
 
@@ -85,7 +91,8 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      align-items: flex-end;
+
+      // align-items: flex-end;
     }
   }
 
@@ -142,6 +149,10 @@
     font-size: 14px;
     line-height: 40px;
     text-transform: uppercase;
+    transition:
+      color $duration-hover ease,
+      background-color $duration-hover linear,
+      border $duration-hover linear;
   }
 
   &__image-link:hover {
@@ -161,9 +172,9 @@
   }
 
   &:hover {
-    position: relative;
-    z-index: 1;
-    transform-origin: center;
+    // position: relative;
+    // z-index: 1;
+    // transform-origin: center;
     transform: scale(1.2);
 
     .card__title {
